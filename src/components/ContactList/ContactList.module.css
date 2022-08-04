@@ -1,0 +1,25 @@
+.list {
+   list-style: none;
+   margin-bottom: 10px;
+}
+
+.text {
+   font-Size: 20px;
+   margin-right: 20px;
+   }
+
+.button {
+   font-Size: 20px;
+   background-color: rgb(57, 51, 51);
+   color: azure;
+   border: 0;
+   border-radius: 2px;
+   margin-left: 30px;
+   
+}
+
+.button:hover, .button:focus {
+  background-color: azure; 
+  color: rgb(57, 51, 51);
+  border: 1px solid black;
+}
