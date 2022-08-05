@@ -13,7 +13,7 @@ const onChangeFilter = (e) =>  dispatch(action.chahgeFilter(e.target.value));
   
 return (
 <label className={s.lable}>Find contacts by name
-   <input className={s.input} type='text' value={value} onChange={() => onChangeFilter()}></input>
+   <input className={s.input} type='text' value={value} onChange={ onChangeFilter}></input>
 </label>
    );
 };

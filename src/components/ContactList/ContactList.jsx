@@ -20,8 +20,6 @@ return (
    number={contact.number} 
    onDeleteContact={onDeleteContact}/>)}
 </ul>
-
-
    );
 };
 
