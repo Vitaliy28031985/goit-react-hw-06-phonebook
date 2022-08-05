@@ -81,8 +81,6 @@ setNumber('');
      )
    }
 
-
-
 ContactForm.propTypes = {
    onSubmit: PropTypes.func,
    };

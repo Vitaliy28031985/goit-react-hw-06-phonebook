@@ -16,5 +16,3 @@ const filter = createReducer('', {
       items,
       filter,
    });
-
-   console.log(filter);
