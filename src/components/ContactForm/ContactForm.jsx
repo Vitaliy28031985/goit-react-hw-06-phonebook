@@ -3,14 +3,20 @@ import { useState } from 'react';
 import shortid from 'shortid';
 import PropTypes from 'prop-types';
 import s from './ContactForm.module.css';
+import { useDispatch } from 'react-redux';
+import action from '../../redux/actions';
 
 
-export const ContactForm = ({onSubmit}) => { 
+
+export const ContactForm = () => { 
 const [name, setName] = useState('');
 const [number, setNumber] = useState('');
 
 const nameInputId = () => shortid.generate();
 const numberInpitId = () => shortid.generate();
+
+const dispatch = useDispatch();
+
 
 
    const handleChange = e => {
@@ -29,7 +35,7 @@ const numberInpitId = () => shortid.generate();
 
 const handleSubmit = e => {
 e.preventDefault();
-onSubmit(name, number);
+dispatch(action.addContact(name, number));
 setName('');
 setNumber('');
 }
